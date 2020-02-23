@@ -134,7 +134,7 @@ public class HomeFragment extends Fragment implements HomeListener{
     private void initHome() {
         List<Home> homes = new ArrayList<>();
 
-        if (getActivity().getResources().getBoolean(R.bool.enable_apply)) {
+        if (getActivity().getResources().getBoolean(R.bool.enable_apply)&&false) {
             homes.add(new Home(
                     R.drawable.ic_toolbar_apply_launcher,
                     String.format(getActivity().getResources().getString(R.string.home_apply_icon_pack),
